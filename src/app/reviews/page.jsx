@@ -1,5 +1,11 @@
-import React from 'react';
-import ReviewsPage from './ReviewsPage';
+import React from "react";
+import ReviewsPage from "./ReviewsPage";
+import { Anek_Bangla } from "next/font/google";
+
+const anek = Anek_Bangla({
+  weight: ["400", "700"],
+  subsets: ["bengali"],
+});
 
 export const metadata = {
   title: "Yantun Khaijan | Reviews",
@@ -8,10 +14,11 @@ export const metadata = {
 
 const AllReviews = () => {
   return (
-    <div>
+    <div className={`${anek.className}`}>
       <ReviewsPage></ReviewsPage>
     </div>
   );
 };
 
-export default AllReviews;<ReviewsPage></ReviewsPage>
+export default AllReviews;
+<ReviewsPage></ReviewsPage>;

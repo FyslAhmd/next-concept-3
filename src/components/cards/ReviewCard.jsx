@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function ReviewCard({ review }) {
@@ -17,6 +18,13 @@ export default function ReviewCard({ review }) {
       {/* User Info */}
       <div className="flex items-center gap-4">
         <img
+          src={photo}
+          alt={user}
+          className="w-14 h-14 rounded-full object-cover border"
+        />
+        <Image
+          width={56}
+          height={56}
           src={photo}
           alt={user}
           className="w-14 h-14 rounded-full object-cover border"
