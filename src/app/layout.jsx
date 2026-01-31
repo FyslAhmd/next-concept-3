@@ -37,6 +37,9 @@ export default function RootLayout({ children }) {
             <Link className="btn" href="/reviews">
               Reviews
             </Link>
+            <Link className="btn" href="/feedback">
+              Feedbacks
+            </Link>
           </div>
         </header>
 
